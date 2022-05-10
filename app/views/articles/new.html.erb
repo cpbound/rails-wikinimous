@@ -1,0 +1,16 @@
+<div id="header" style="background-color: gray">
+    <h1><%= link_to "Wikichuff", articles_path  %></h1>
+    <h2></h2>
+  </div>
+<h2>New Article</h2>
+
+<%= form_for(@article) do |f| %>
+    <%= f.label :title %>
+    <%= f.text_field :content %>
+    <%= f.label :title %>
+    <%= f.text_field :content %>
+    <%= f.submit %>
+<% end %>
+
+<div>
+<%= link_to "HORME", articles_path  %></div>

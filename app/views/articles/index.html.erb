@@ -1,0 +1,16 @@
+<div class="container-md">
+  <div id="header" style="">
+    <h1><%= link_to "Wikichuff", articles_path  %></h1>
+    <h2></h2>
+  </div>
+
+  <div class="card">
+    <% @articles.each do |article| %>
+    <h3><%= article.title.capitalize %></h3>
+    <p><%= article.content %></p>
+    <% end %>
+  </div>
+
+
+
+</div>
